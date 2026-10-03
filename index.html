@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<title>windows utilities</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Windows Utilities official website</h1>
+    <h2>download from GitHub</h2>
+    <button onclick="downloadFile()">download windows utilities</button>
+
+<script>
+function downloadFile() {
+  const link = document.createElement('a');
+  link.href = 'https://github.com/guguverse/Windows-utilities/releases/tag/WinU/windows.utilities.-.all.versions.zip';
+  link.download = 'windows.utilities.-.all.versions.zip';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+</script>
+</body>
+</html>
